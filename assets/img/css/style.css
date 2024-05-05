@@ -1,0 +1,74 @@
+:root{
+    --azul:#0000ff;
+    --amarillo:#fbffa7;
+    --celeste:#b1c5ff;
+    --verde:#b6ffc0;
+    --naranja:#ff764d;
+    --violeta:#d5b3ff;
+    --negro:#000000;
+    --gris:#e5e5e5;
+    --gris-oscuro:#999999;
+
+}
+.textBlue{
+    color: var(--azul);
+}
+.foto1{
+    background-image: url(../foto1.jpg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center; 
+    height:calc(100vh - 80px);
+    position: relative;
+    
+}
+.foto1:before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 70%;
+    height: 80%;
+    margin: auto;
+    /* background-color: var(--gris-oscuro); */
+    opacity: 0.2;
+}
+.textFoto1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 5rem;
+    /* z-index: 3; */
+    transform: translate(-50%,-50%);
+    color: var(--naranja);
+    text-shadow: #000000 0.1em 0.1em 0.2em;
+}
+span{
+    color: var(--azul);
+}
+.fondoAmarillo{
+    background-color: var(--amarillo);
+    width: 40rem;
+    height: 30rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: -310px;
+    margin: 50px;
+    
+}
+.clear{
+    clear: both;
+}
+.foto2{
+    width: 30rem;
+    position:absolute;
+    left: -300px;
+    
+}
+.foto3{
+    width: 20rem;
+    position:absolute;
+    right: 80px;
+}
